@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #fff1a8, #ffe066); /* butter + lemon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container {
+  background: #fff7cc; /* soft butter yellow */
+  padding: 25px 30px;
+  border-radius: 15px;
+  width: 350px;
+  color: #5a3e1b; /* brown text */
+  box-shadow: 0 10px 25px rgba(90, 62, 27, 0.2);
+}
+
+.todo-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #5a3e1b;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #d4a373; /* light brown */
+  outline: none;
+  font-size: 14px;
+}
+
+.input-section input:focus {
+  border-color: #ffd000; /* lemon highlight */
+}
+
+.input-section button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ffd000; /* lemon yellow */
+  color: #5a3e1b;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.input-section button:hover {
+  background: #ffea70;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-list li {
+  background: #fff1a8; /* butter */
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  border-left: 6px solid #d4a373; /* brown accent */
+}
+
+.todo-list li:hover {
+  background: #ffe066;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #8b5e34;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  color: #c1121f;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .todo-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .todo-container h1 {
+    font-size: 22px;
+  }
+
+  .input-section input,
+  .input-section button {
+    font-size: 13px;
+  }
+}
